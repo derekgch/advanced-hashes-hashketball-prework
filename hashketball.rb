@@ -155,7 +155,7 @@ end
 #   returns the Brooklyn Nets (FAILED - 2)
 def winning_team
   team_p = {}
-  
+
   game_hash.each do | location, team_data|
     temp = 0
     team_data[:player].each do |p_name, stats|
@@ -165,7 +165,7 @@ def winning_team
   end
 
   team_p
-  
+
 end
 
 
