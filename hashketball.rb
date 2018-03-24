@@ -162,8 +162,8 @@ def winning_team
     team_data[:players].each do |p_name, stats|
       temp += stats[:points]
     end
-    temp_n << team_data[:team_name]
-    temp_p << temp
+    team_n << team_data[:team_name]
+    team_p << temp
   end
 
   team_p
