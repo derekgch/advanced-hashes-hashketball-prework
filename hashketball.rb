@@ -166,7 +166,7 @@ def winning_team
     team_p << temp
   end
 
-  team_n
+  team_p[0] > team_p[1] ? team_n[0] : team_n[1]
 
 end
 
