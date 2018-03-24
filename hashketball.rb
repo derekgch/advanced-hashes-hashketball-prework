@@ -170,9 +170,20 @@ def winning_team
 
 end
 
-
-
-
-
 # #player_with_longest_name
 #   returns Brendan Haywood (FAILED - 3)
+def player_with_longest_name 
+  longest_name = 0
+  the_player = ""
+
+  game_hash.each do |location, team_data|
+      team_data[:players].each do |name,stats|
+        if (name.size > the_player.size)
+          the_player = name
+        end #if
+      end #team_data
+  end #game_hash
+
+end
+
+
