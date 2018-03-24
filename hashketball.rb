@@ -166,7 +166,7 @@ def winning_team
     team_p << temp
   end
 
-  team_p
+  team_n
 
 end
 
