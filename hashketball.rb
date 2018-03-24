@@ -172,7 +172,7 @@ end
 
 # #player_with_longest_name
 #   returns Brendan Haywood (FAILED - 3)
-def player_with_longest_name 
+def player_with_longest_name
   longest_name = 0
   the_player = ""
 
@@ -183,7 +183,6 @@ def player_with_longest_name
         end #if
       end #team_data
   end #game_hash
+  the_player
 
 end
-
-
