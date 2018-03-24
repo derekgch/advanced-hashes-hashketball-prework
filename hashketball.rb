@@ -153,5 +153,24 @@ end
 
 # #winning_team
 #   returns the Brooklyn Nets (FAILED - 2)
+def winning_team
+  team_p = {}
+  
+  game_hash.each do | location, team_data|
+    temp = 0
+    team_data[:player].each do |p_name, stats|
+      temp += stats[:points]
+    end
+    temp_p[team_data[:team_name]] = temp_p
+  end
+
+  team_p
+  
+end
+
+
+
+
+
 # #player_with_longest_name
 #   returns Brendan Haywood (FAILED - 3)
