@@ -158,7 +158,7 @@ def winning_team
 
   game_hash.each do | location, team_data|
     temp = 0
-    team_data[:player].each do |p_name, stats|
+    team_data[:players].each do |p_name, stats|
       temp += stats[:points]
     end
     temp_p[team_data[:team_name]] = temp_p
